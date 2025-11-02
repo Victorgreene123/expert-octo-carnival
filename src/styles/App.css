@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  /* <weight>: Use a value from 400 to 900 */
+  font-family: "Golos Text", sans-serif;
+}
+
+.secondary-font {
+  /* <weight>: Use a value from 100 to 900 */
+  font-family: "Public Sans", sans-serif;
+}
+
+.admin-font{
+  font-family: "Cascadia Mono", sans-serif ;
+}
+
+.admin-font-italic {
+  font-family: "Cascadia Mono", sans-serif;
+  font-optical-sizing: auto;
+  
+  font-style: italic;
+}
+
+.gradient-text {
+ background: linear-gradient(90deg, #FC9807 0%, #283582 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 400;
+}
+
+.very-big-text {
+  font-size: clamp(
+    38px,
+    calc(38px + (65 - 38) * ((100vw - 320px) / (1440 - 320))),
+    65px
+  );
+}
+
+h1 {
+  font-size: clamp(
+    32px,
+    calc(32px + (48 - 32) * ((100vw - 320px) / (1440 - 320))),
+    52px
+  );
+}
+
+.vlarge-text {
+  font-size: clamp(
+    22px,
+    calc(22px + (26 - 22) * ((100vw - 320px) / (1440 - 320))),
+    26px
+  );
+}
+
+.large-text {
+  font-size: clamp(
+    18px,
+    calc(20px + (24 - 20) * ((100vw - 320px) / (1440 - 320))),
+    20px
+  );
+}
+
+.medium-text {
+  font-size: clamp(
+    16px,
+    calc(16px + (20 - 16) * ((100vw - 320px) / (1440 - 320))),
+    18px
+  );
+}
+
+p,
+.normal-text {
+  font-size: clamp(
+    12.5px,
+    calc(12.5px + (16 - 12.5) * ((100vw - 320px) / (1440 - 320))),
+    16px
+  );
+}
+
+.small-text {
+  font-size: clamp(
+    12px,
+    calc(12px + (14 - 12) * ((100vw - 320px) / (1440 - 320))),
+    14px
+  );
+}
+
+.tiny-text {
+  font-size: clamp(
+    10px,
+    calc(10px + (12 - 10) * ((100vw - 320px) / (1440 - 320))),
+    12px
+  );
+}
+
+.scrollbody {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbody::-webkit-scrollbar {
+  display: none;
+}
+
+.snaps {
+  scroll-snap-type: inline mandatory;
+}
+
+.snaps > * {
+  scroll-snap-align: start;
+}
